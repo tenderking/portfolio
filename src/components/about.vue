@@ -1,19 +1,14 @@
 <template>
   <main>
-    <nav>
-      <span>GM</span>
-
-      <ul class="nav-list">
-        <li>About</li>
-
-        <li>Work</li>
-      </ul>
-    </nav>
+   
 
     <section class="about-me">
       <div class="image-and-socials">
+<div>
+
         <img id="profile-pic" src="../assets/profile-pic.png" alt="" />
 
+</div>
         <div id="socials">
           <img
             src="../assets/ant-design_behance-circle-filled.png"
@@ -110,54 +105,13 @@ export default {
 </script>
 
 <style>
-main {
-  
-  box-sizing: border-box;
-   
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
- 
-  margin-bottom: 20px;
-  margin:  0 50px;
-}
 
-span {
-  font-weight: bold;
-  font-size: 72px;
-  text-transform: uppercase;
-  color: #1e2d48;
-  margin: 0;
-}
-
-.nav-list,
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-  align-items: base;
-  list-style-type: none;
-  font-weight: 200;
-  font-size: 36px;
-  padding-bottom: 1rem;
-  
-  text-transform: lowercase;
-  margin: 0;
-  padding-top: 5px;
-}
 
 .about-me {
-  display: flex;
-  flex: 1 1 100%;
-  justify-content: center;
-  
-  border-top: 5 double #000000;
+  display: flex;  
+ 
   padding-top: 100px;
-  margin:  0 50px;
+  margin:  0 5%;
  
 }
 
@@ -219,8 +173,8 @@ p {
 .skills {
   flex: 1 1 33%;
   margin: auto;
-  margin-top: 100px;
-  padding: 0;
+  margin-top: 0px;
+  padding: 5%;
   text-align: left;
 }
 
@@ -248,6 +202,8 @@ p {
   font-weight: bold;
   font-size: 18px;
   width: max-content;
+ 
+  
 }
 
 .skill-normal-text {
@@ -309,5 +265,9 @@ p{
 .skill-normal-text, .italic-date{
   list-style: circle;
 }
+.h3{
+ width:fit-content
+}
+
 }
 </style>
