@@ -113,14 +113,16 @@ export default {
 main {
   
   box-sizing: border-box;
+   
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-  margin: 0;
+ 
   margin-bottom: 20px;
+  margin:  0 50px;
 }
 
 span {
@@ -152,24 +154,32 @@ li {
   display: flex;
   flex: 1 1 100%;
   justify-content: center;
+  
   border-top: 5 double #000000;
   padding-top: 100px;
-  margin: 0;
+  margin:  0 50px;
  
 }
 
+
+
 #socials {
   display: flex;
+  
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
+  
 }
 
 #socials > img {
   margin: 0;
+
+  
+width: 40px;
 }
 
 .image-and-socials {
@@ -184,18 +194,18 @@ li {
 }
 
 .intro {
+   width: 50%;
  
   text-align: left;
  }
 
 p {
-  font-size: 36px;
-  top: 50px;
-  
-  padding: 0;
+  font-size: 36px;    
+  padding: 2rem;
   line-height: 1.5;
   bottom: 10px;
 }
+
 
 .skills-overview {
   background: #2c81df;
@@ -203,6 +213,7 @@ p {
   justify-content: center;
 
   margin: 0;
+  padding: 50px;
 }
 
 .skills {
@@ -266,5 +277,37 @@ p {
   gap: 1rem;
   text-align: left;
 
+}
+@media only screen and (max-width: 600px) {
+  span{
+    font-size: 64px;
+  }
+  .nav-list,
+li{
+  font-size: 24px;
+}
+p{
+  font-size: 24px;
+}
+.about-me{
+  flex-direction: column;
+}
+.intro{
+  width:100%;
+}
+
+.image-and-socials {
+  width: 100%;
+}
+.skills-overview {
+  flex-direction: column;
+  margin-top: 0;
+}
+.skills, .skill-normal-text, .italic-date, li, .h3, .h2{
+  margin: 0;
+}
+.skill-normal-text, .italic-date{
+  list-style: circle;
+}
 }
 </style>
