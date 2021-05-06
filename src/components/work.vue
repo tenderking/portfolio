@@ -1,15 +1,22 @@
 <template>
   <h1>My projects</h1>
-  <div>1</div>
+  <div class="project-card">Coming Soon</div>
 </template>
 
 <script>
 export default {
-    name: "Work"
-
-}
+  name: "Work"
+};
 </script>
 
 <style>
-
+.project-card {
+  background: burlywood;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

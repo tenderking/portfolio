@@ -137,10 +137,17 @@ export default {
   margin-bottom: 100px;
 }
 
-#socials > img {
+#socials > * {
   margin: 0;
 
   width: 40px;
+  display: inline-block;
+  transition: transform 0.5ms ease-in;
+}
+
+#socials > *:hover {
+  transform: rotate(45deg) scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .image-and-socials {
