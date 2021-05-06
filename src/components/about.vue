@@ -1,14 +1,10 @@
 <template>
   <main>
-   
-
     <section class="about-me">
       <div class="image-and-socials">
-<div>
-
-        <img id="profile-pic" src="../assets/profile-pic.png" alt="" />
-
-</div>
+        <div>
+          <img id="profile-pic" src="../assets/profile-pic.png" alt="" />
+        </div>
         <div id="socials">
           <img
             src="../assets/ant-design_behance-circle-filled.png"
@@ -64,11 +60,11 @@
         <ul>
           <li class="h2">Skills</li>
 
-          <li class="skill-normal-text"></li>
-
           <li class="skill-normal-text">Design thinking</li>
           <li class="skill-normal-text">UX+UI</li>
           <li class="skill-normal-text"></li>
+          <p class="italic-date"></p>
+
           <li class="skill-normal-text">Machine Learning</li>
           <li class="skill-normal-text">Bayesian Statistics</li>
           <li class="skill-normal-text">Regression</li>
@@ -77,11 +73,12 @@
 
       <div class="skills">
         <ul>
-          <li class="h2">tools</li>
+          <li class="h2">Tools</li>
           <li class="skill-normal-text">Figma, AdobeXD</li>
           <li class="skill-normal-text">HTML , CSS, JS</li>
           <li class="skill-normal-text"></li>
-          <li class="skill-normal-text"></li>
+
+          <p class="italic-date"></p>
           <li class="skill-normal-text">Python, R, Excel</li>
           <li class="skill-normal-text">Tableau, PowerBI</li>
         </ul>
@@ -89,56 +86,66 @@
     </section>
 
     <section class="links">
-      <div id="my-projects"><img src="" alt="" /> My Projects</div>
+      <div id="my-projects">
+        <img class="icons-dark" src="../assets/ic_outline-work.png" alt="" /> My
+        Projects
+      </div>
 
-      <div id="resume"><img src="" alt="" /> Download Resume</div>
+      <div id="resume">
+        <img
+          class="icons-dark"
+          src="../assets/ant-design_download-outlined.png"
+          alt=""
+        />
+        Download Resume
+      </div>
 
-      <div id="email"><img src="" alt="" /> Get in touch</div>
+      <div id="email">
+        <img
+          class="icons-dark"
+          src="../assets/clarity_email-solid-dark.png"
+          alt=""
+        />
+        Get in touch
+      </div>
     </section>
   </main>
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: "About"
 };
 </script>
 
 <style>
-
-
 .about-me {
-  display: flex;  
- 
+  display: flex;
+
   padding-top: 100px;
-  margin:  0 5%;
- 
+  margin: 0 5%;
 }
-
-
 
 #socials {
   display: flex;
-  
+
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
-  
 }
 
 #socials > img {
   margin: 0;
 
-  
-width: 40px;
+  width: 40px;
 }
 
 .image-and-socials {
   margin: 0;
- 
+
   width: 50%;
 }
 
@@ -148,18 +155,17 @@ width: 40px;
 }
 
 .intro {
-   width: 50%;
- 
+  width: 50%;
+
   text-align: left;
- }
+}
 
 p {
-  font-size: 36px;    
+  font-size: 36px;
   padding: 2rem;
   line-height: 1.5;
   bottom: 10px;
 }
-
 
 .skills-overview {
   background: #2c81df;
@@ -172,10 +178,12 @@ p {
 
 .skills {
   flex: 1 1 33%;
-  margin: auto;
-  margin-top: 0px;
+
   padding: 5%;
   text-align: left;
+}
+.skills > * {
+  list-style: none;
 }
 
 .h2 {
@@ -202,8 +210,6 @@ p {
   font-weight: bold;
   font-size: 18px;
   width: max-content;
- 
-  
 }
 
 .skill-normal-text {
@@ -220,54 +226,88 @@ p {
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .links {
   font-size: 36px;
   font-weight: Bold;
-  padding: 5rem;
+
   display: flex;
   flex-direction: column;
   width: max-content;
   justify-content: center;
+  align-content: baseline;
   gap: 1rem;
   text-align: left;
+  margin: 5em auto;
+}
+.icons-dark {
+  position: relative;
+  top: 5px;
+  width: 40px;
+}
+.links > * {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
 
+.icons-dark {
+  width: 30px;
+  transition: transform 0.2s ease;
+}
+.links > *:hover {
+  transform: translateY(-3px);
+  transform: scale(1.2);
+}
+.icons-dark:hover {
+  transform: translateY(-5px);
 }
 @media only screen and (max-width: 600px) {
-  span{
+  span {
     font-size: 64px;
   }
   .nav-list,
-li{
-  font-size: 24px;
-}
-p{
-  font-size: 24px;
-}
-.about-me{
-  flex-direction: column;
-}
-.intro{
-  width:100%;
-}
+  li {
+    font-size: 24px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .about-me {
+    flex-direction: column;
+  }
+  .intro {
+    width: 100%;
+  }
 
-.image-and-socials {
-  width: 100%;
-}
-.skills-overview {
-  flex-direction: column;
-  margin-top: 0;
-}
-.skills, .skill-normal-text, .italic-date, li, .h3, .h2{
-  margin: 0;
-}
-.skill-normal-text, .italic-date{
-  list-style: circle;
-}
-.h3{
- width:fit-content
-}
+  .image-and-socials {
+    width: 100%;
+  }
+  .skills-overview {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .skills,
+  .skill-normal-text,
+  .italic-date,
+  li,
+  .h3,
+  .h2 {
+    margin: 5% 0;
+  }
 
+  .italic-date {
+    margin-bottom: 20px;
+  }
+  .h3 {
+    width: fit-content;
+  }
+  .links > * {
+    font-size: 24px;
+  }
+
+  .icons-dark {
+    width: 30px;
+  }
 }
 </style>
