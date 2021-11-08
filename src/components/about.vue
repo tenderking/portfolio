@@ -3,32 +3,38 @@
     <section class="about-me">
       <div class="image-and-socials">
         <div>
-          <img id="profile-pic" src="../assets/profile-pic.png" alt="" />
+          <img id="profile-pic" src="../assets/outdoor-pic.jpg" alt="" />
         </div>
         <div id="socials">
-          <img
-            src="../assets/ant-design_behance-circle-filled.png"
-            alt="behance icon"
-          />
+          <a href="https://www.behance.net/georgemushore">
+            <img
+              src="../assets/ant-design_behance-circle-filled.png"
+              alt="behance icon"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/george-mushore-b17927a2/">
+            <img
+              src="../assets/akar-icons_linkedin-fill.png"
+              alt="linkedin icon"
+            />
+          </a>
 
-          <img
-            src="../assets/akar-icons_linkedin-fill.png"
-            alt="linkedin icon"
-          />
-
-          <img
-            src="../assets/ant-design_medium-circle-filled.png"
-            alt="medium icon"
-          />
-
-          <img src="../assets/clarity_email-solid.png" alt="email" />
+          <a href="https://gmu003.medium.com/">
+            <img
+              src="../assets/ant-design_medium-circle-filled.png"
+              alt="medium icon"
+            />
+          </a>
+          <a href="mailto:gmu003@gmail.com">
+            <img src="../assets/clarity_email-solid.png" alt="email" />
+          </a>
         </div>
       </div>
 
       <div class="intro">
         <p>
-          I am a data scientist and a UX-designer with a passion for making
-          things easy to understand
+          I am a tech engineer with a passion for digital-development. 
+          My goal is to make technology easy to understand. I have a background in applied in data science and physics, and right now I'm current learning and improving my web development and ux-design skills together . I'm open to have a chat, or a coffee. 
         </p>
       </div>
     </section>
@@ -86,27 +92,35 @@
     </section>
 
     <section class="links">
+      
       <div id="my-projects">
+        <router-link  to="/work">
         <img class="icons-dark" src="../assets/ic_outline-work.png" alt="" /> My
         Projects
+        </router-link>
       </div>
 
       <div id="resume">
+        <a href="../assets/CV_George.pdf" download="CV George English">
         <img
           class="icons-dark"
           src="../assets/ant-design_download-outlined.png"
           alt=""
         />
         Download Resume
+        </a>
       </div>
 
       <div id="email">
+        <a href="mailto:gmu003@gmail.com">
+
         <img
           class="icons-dark"
           src="../assets/clarity_email-solid-dark.png"
           alt=""
         />
         Get in touch
+        </a>
       </div>
     </section>
   </main>
@@ -114,7 +128,7 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
 };
 </script>
 
@@ -137,13 +151,13 @@ export default {
   margin-bottom: 100px;
 }
 
-#socials > * {
+#socials > *>* {
   margin: 0;
-
   width: 40px;
   display: inline-block;
   transition: transform 0.5ms ease-in;
 }
+
 
 #socials > *:hover {
   transform: rotate(45deg) scale(1.1);
@@ -157,21 +171,21 @@ export default {
 }
 
 #profile-pic {
-  width: 250px;
+  width: 90%;
   padding: 1rem;
 }
 
 .intro {
   width: 50%;
-
   text-align: left;
 }
 
 p {
-  font-size: 36px;
-  padding: 2rem;
+  font-size: 24px;
+  padding: 1rem;
   line-height: 1.5;
-  bottom: 10px;
+margin: 0; 
+padding-top:0;
 }
 
 .skills-overview {
@@ -253,7 +267,9 @@ p {
   top: 5px;
   width: 40px;
 }
-.links > * {
+.links > * >*{
+  color:#1e2d48;
+  text-decoration: none;
   display: inline-block;
   transition: transform 0.2s ease;
 }
@@ -262,7 +278,7 @@ p {
   width: 30px;
   transition: transform 0.2s ease;
 }
-.links > *:hover {
+.links > *>*:hover {
   transform: translateY(-3px);
   transform: scale(1.2);
 }
@@ -282,6 +298,9 @@ p {
   }
   .about-me {
     flex-direction: column;
+  }
+  #socials{
+    margin-block:1em
   }
   .intro {
     width: 100%;

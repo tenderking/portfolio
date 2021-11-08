@@ -42,7 +42,7 @@ nav {
 
 .nav-logo {
   font-weight: bold;
-  font-size: 72px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #1e2d48;
   margin: 0;
@@ -63,7 +63,7 @@ nav {
   color: #1e2d48;
   text-decoration: none;
   font-weight: 200;
-  font-size: 36px;
+  font-size: 30px;
   padding-bottom: 1rem;
   text-transform: lowercase;
   margin: 0;
