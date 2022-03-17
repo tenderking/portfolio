@@ -129,7 +129,7 @@
 
 <script>
 	export default {
-		name: "About",
+		name: "AboutPage",
 	};
 </script>
 
@@ -171,13 +171,16 @@
 	}
 
 	#profile-pic {
-		width: 90%;
+		max-width: 90%;
 		padding: 1rem;
 	}
 
 	.intro {
 		width: 50%;
 		text-align: left;
+		margin-bottom: 4em;
+		display: grid;
+		place-content: center;
 	}
 
 	p {
@@ -189,7 +192,7 @@
 	}
 
 	.skills-overview {
-		background: #2c81df;
+		background: var(--color-bg);
 		display: flex;
 		justify-content: center;
 
@@ -212,7 +215,7 @@
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 56px;
-		color: #a9c0ef;
+		color: var(--color-text2);
 		margin: 0;
 		margin-bottom: 80px;
 	}
@@ -220,13 +223,13 @@
 	.skill-type {
 		font-weight: bold;
 		font-size: 24px;
-		color: #1e2d48;
+		color: var(--color-text-2);
 		width: max-content;
 		margin: 0;
 	}
 
 	.h3 {
-		color: #1e2d48;
+		color: var(--color-text-3);
 		margin: 0;
 		font-weight: bold;
 		font-size: 18px;
@@ -234,14 +237,14 @@
 	}
 
 	.skill-normal-text {
-		color: #1e2d48;
+		color: var(--color-text-3);
 		width: max-content;
 		margin: 0;
 		font-size: 18px;
 	}
 
 	.italic-date {
-		color: #1e2d48;
+		color: var(--color-text-3);
 		width: max-content;
 		margin: 0;
 		font-style: italic;
@@ -268,7 +271,7 @@
 		width: 40px;
 	}
 	.links > * > * {
-		color: #1e2d48;
+		color: var(--color-text-3);
 		text-decoration: none;
 		display: inline-block;
 		transition: transform 0.2s ease;
