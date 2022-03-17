@@ -12,6 +12,7 @@
 <style>
 	.project-card {
 		background: var(--color-sec-60);
+		color: var(--color-10);
 		width: 300px;
 		height: 300px;
 		margin: auto;
