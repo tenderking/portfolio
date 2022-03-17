@@ -28,7 +28,7 @@
 		--color-85: hsl(220, 90%, 85%);
 		--color-90: hsl(220, 69%, 70%);
 		--color-100: white;
-		--color-sec-60: burlywood;
+		--color-sec-60: hsl(34, 57%, 70%);
 		--color-text: var(--color-20);
 		--color-text-2: var(--color-80);
 		--color-text-3: var(--color-10);
