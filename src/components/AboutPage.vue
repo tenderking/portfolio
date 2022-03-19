@@ -3,7 +3,11 @@
 		<section class="about-me">
 			<div class="image-and-socials">
 				<div>
-					<img id="profile-pic" src="../assets/outdoor-pic.jpg" alt="" />
+					<img
+						id="profile-pic"
+						src="../assets/outdoor-pic.jpg"
+						alt="profile picture"
+					/>
 				</div>
 				<div id="socials">
 					<a href="https://www.behance.net/georgemushore">
@@ -35,9 +39,13 @@
 				<p>
 					I am a tech engineer with a passion for digital-development. My goal
 					is to make technology easy to understand. I have a background in
-					applied in data science and physics, and right now I'm current
-					learning and improving my web development and ux-design skills
-					together . I'm open to have a chat, or a coffee.
+					applied data science and physics, and I'm currently improving my web
+					development and ux-design skills. I'm open to have a
+					<a
+						href="mailto:gmu003@gmail.com"
+						style="color:var(--color-text), text-decoration-line:none"
+						>chat 👋</a
+					>, or a coffee.
 				</p>
 			</div>
 		</section>
@@ -166,8 +174,6 @@
 
 	.image-and-socials {
 		margin: 0;
-
-		width: 50%;
 	}
 
 	#profile-pic {
@@ -176,7 +182,6 @@
 	}
 
 	.intro {
-		width: 50%;
 		text-align: left;
 		margin-bottom: 4em;
 		display: grid;
