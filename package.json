@@ -9,11 +9,11 @@
 	},
 	"dependencies": {
 		"core-js": "^3.20.3",
-		"vue": "^3.2.29",
-		"vue-router": "^4.0.12",
-		"postcss": ">=8.4.5",
 		"glob-parent": ">=6.0.2",
-		"node-forge": ">=1.2.1"
+		"node-forge": ">=1.2.1",
+		"postcss": ">=8.4.5",
+		"vue": "^3.2.29",
+		"vue-router": "^4.0.12"
 	},
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^4.5.15",
@@ -22,6 +22,7 @@
 		"@vue/cli-service": "^4.5.15",
 		"@vue/compiler-sfc": "^3.2.29",
 		"babel-eslint": "^10.1.0",
+		"eslint": "^4.19.1",
 		"eslint-plugin-vue": "^8.3.0"
 	},
 	"eslintConfig": {
