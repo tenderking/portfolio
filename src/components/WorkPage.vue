@@ -11,7 +11,9 @@
 				<a href="https://tenderking.github.io/interactive-comments-app/"
 					>Visit Demo</a
 				>
-				<a href="https://github.com/tenderking/sunnyside-app">Visit Repo</a>
+				<a href="https://github.com/tenderking/interactive-comments-app"
+					>Visit Repo</a
+				>
 			</div>
 		</div>
 		<div class="project-card">
@@ -31,7 +33,7 @@
 			</div>
 			<div class="card-back">
 				<a href="https://tenderking.github.io/job-listing-app/#/">Visit Demo</a>
-				<a href="https://github.com/tenderking/sunnyside-app">Visit Repo</a>
+				<a href="https://github.com/tenderking/job-listing-app/">Visit Repo</a>
 			</div>
 		</div>
 	</div>
