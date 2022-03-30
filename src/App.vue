@@ -21,19 +21,19 @@
 
 <style>
 	body {
-		--color-60: #2c81df;
-		--color-10: #1e2d48;
-		--color-20: #2c3e50;
-		--color-80: #a9c0ef;
-		--color-85: hsl(220, 90%, 85%);
-		--color-90: hsl(220, 69%, 70%);
-		--color-100: white;
-		--color-sec-60: hsl(34, 57%, 70%);
-		--color-text: var(--color-20);
-		--color-text-2: var(--color-80);
-		--color-text-3: var(--color-10);
-		--color-bg: var(--color-60);
-		--bg: var(--color-100);
+		--color-primary-10: hsl(220, 41%, 20%);
+		--color-primary-20: hsl(220, 41%, 30%);
+		--color-primary-80: hsl(220, 69%, 80%);
+		--color-primary-85: hsl(220, 69%, 85%);
+		--color-white: white;
+		--color-secondary-60: hsl(34, 57%, 70%);
+		--color-secondary-90: hsl(34, 57%, 90%);
+
+		--color-text: var(--color-primary-10);
+		--color-text-2: var(--color-secondary-90);
+		--color-text-3: var(--color-primary-10);
+		--color-bg: var(--color-primary-80);
+		--bg: var(--color-white);
 
 		font-family: "Roboto", sans-serif;
 		-webkit-font-smoothing: antialiased;
@@ -45,11 +45,12 @@
 	}
 	@media (prefers-color-scheme: dark) {
 		body {
-			--color-text: var(--color-85);
-			--color-text-2: var(--color-90);
-			--color-text-3: var(--color-80);
-			--color-bg: var(--color-20);
-			--bg: var(--color-10);
+			--color-text: var(--color-primary-85);
+			--color-text-2: var(--color-secondary-90);
+			--color-text-3: var(--color-primary-85);
+			--color-bg: var(--color-primary-20);
+			--bg: var(--color-primary-10);
+			font-size: 14px;
 		}
 	}
 
@@ -58,24 +59,30 @@
 		justify-content: space-between;
 		align-items: center;
 
-		margin-bottom: 20px;
 		margin: 0 5%;
-		padding-bottom: 20px;
-		border-bottom: 2px double var(--color-80);
+		padding-block: 1em 0.5em;
+		border-bottom: 2px double var(--color-primary-80);
 	}
 
 	.nav-logo {
 		font-weight: bold;
 		font-size: 40px;
 		text-transform: uppercase;
-		color: var(--color-text);
+		/* color: var(--color-text); */
+		background: linear-gradient(
+			40deg,
+			var(--color-text) 65%,
+			var(--color-secondary-60) 15%
+		);
 		margin: 0;
 		text-decoration: none;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	.nav-list {
 		display: flex;
-
 		flex-direction: row;
 		justify-content: flex-end;
 		gap: 20px;
@@ -86,12 +93,11 @@
 	.nav-work {
 		color: var(--color-text-3);
 		text-decoration: none;
-		font-weight: 200;
-		font-size: 30px;
-		padding-bottom: 1rem;
+		font-weight: 400;
+
 		text-transform: lowercase;
 		margin: 0;
-		padding-top: 5px;
+
 		display: inline-block;
 		position: relative;
 	}
@@ -113,10 +119,10 @@
 	.nav-work:hover::after {
 		width: 100%;
 
-		background: var(--color-sec-60);
+		background: var(--color-secondary-60);
 	}
 	.nav-about:active,
 	.nav-work:active {
-		color: var(--color-sec-60);
+		color: var(--color-secondary-60);
 	}
 </style>
