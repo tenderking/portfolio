@@ -1,4 +1,6 @@
-# my-portfolio
+# My Personal Website
+
+This is the repository of [my personal website](https://www.georgemushore.com). It is created using [vue.js](https://vuejs.org) and hosted on Azure. 
 
 ## Project setup
 ```
